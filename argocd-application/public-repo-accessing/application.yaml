@@ -2,16 +2,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: apps-staging
+  name: bank-of-anthos
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/antonputra/lesson-158.git
+    repoURL: https://github.com/Pruthvi2340/bank-of-anthos-devsecops.git
     targetRevision: HEAD
-    path: environments/staging/apps
+    path: bank-of-anthos/kubernetes-manifests
   destination:
     server: https://kubernetes.default.svc
     namespace: bank-of-anthos

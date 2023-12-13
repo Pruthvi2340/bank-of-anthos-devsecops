@@ -72,10 +72,9 @@ helm list --pending -A           # check failed helm repo list
 **To get intial password for argocd to login**
 ```
 kubectl get secrets -n argocd
-kubectl get secrets argocd-intial-admin-password -o yaml -n argocd
+kubectl get secrets argocd-intial-admin-secret -o yaml -n argocd
 
 kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath='{.data.password}' | base64 --decode  # To get intial password
-
 ```
 
 

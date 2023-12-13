@@ -9,9 +9,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:antonputra/lesson-158-private.git
+    repoURL: git@github.com:Pruthvi2340/bank-of-anthos-devsecops.git
     targetRevision: HEAD
-    path: environments/dev/my-app
+    path: bank-of-anthos/kubernetes-manifests
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
