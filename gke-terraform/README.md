@@ -77,7 +77,14 @@ kubectl get secrets argocd-intial-admin-secret -o yaml -n argocd
 kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath='{.data.password}' | base64 --decode  # To get intial password
 ```
 
+# Change Argocd server service from cluster IP to Loadbalancer IP
 
+```
+kubectl edit svc argocd-server -n argocd
+```
+```
+change type:ClusterIp to LoadBalancer
+```
 
 ## Cleanup
 
