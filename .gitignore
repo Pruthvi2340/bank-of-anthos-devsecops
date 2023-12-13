@@ -1,9 +1,9 @@
 # Ignore service account JSON file
-service-account.json
+gke-terraform/service-account.json
 
 # Ignore Terraform lock file
-.terraform.lock.hcl
+gke-terraform/.terraform.lock.hcl
 
 # Ignore Terraform state files
-terraform.tfstate
-terraform.tfstate.backup
+gke-terraform/terraform.tfstate
+gke-terraform/terraform.tfstate.backup
