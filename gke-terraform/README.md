@@ -83,7 +83,7 @@ kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath='{.data.pas
 kubectl edit svc argocd-server -n argocd
 ```
 ```
-change type:ClusterIp to LoadBalancer
+change type:ClusterIP to LoadBalancer
 ```
 
 ## Cleanup
